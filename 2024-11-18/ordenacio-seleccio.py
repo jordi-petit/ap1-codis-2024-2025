@@ -24,11 +24,10 @@ def pos_minim(L: list[T], i: int) -> int:
     return p
 
 
-n = 1000
-while n < 1000000:
-    L = [random.randint(0, n) for i in range(n)]
-    t0 = time.time()
-    ordena_per_seleccio(L)
-    t1 = time.time()
-    print(n, t1 - t0)
-    n *= 2
+n = 20000
+L = [random.randint(0, n) for i in range(n)]
+t0 = time.time()
+ordena_per_seleccio(L)
+t1 = time.time()
+print(n, t1 - t0)
+n *= 2
